@@ -5,9 +5,9 @@ var func = require('../func/index');
 const testEqual = (value, expectation, errorMsg="Failed") => {
   return value === expectation ?
     "Passed" :
-    errorMsg
+    errorMsg;
 }
-module.exports = testEqual
+module.exports = testEqual;
 
 
 // show all cups
