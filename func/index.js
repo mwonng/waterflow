@@ -20,9 +20,19 @@ var func = {
       for (j = 0; j <= i ; j++) {
 
         if (cupArray[i][j] > glassCap) {
+          // grab cap here if water still overflow
+          if( i === row && j === col ) {
+            return glassCap;
+          }
+
           cupArray[i+1][j] += (cupArray[i][j] - glassCap ) / 2;
           cupArray[i+1][j+1] += (cupArray[i][j] - glassCap ) / 2;
           cupArray[i][j] = glassCap;
+        }
+
+        // grab cap here if water not overflow
+        if( i === row && j === col ) {
+          return cupArray[i][j];
         }
       }
     }
