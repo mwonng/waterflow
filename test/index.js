@@ -1,5 +1,6 @@
-var func = require('../func/index');
+#!/usr/bin/env node
 
+var func = require('../func/index');
 
 const testEqual = (value, expectation, errorMsg="Failed") => {
   return value === expectation ?

@@ -12,6 +12,30 @@ If any of the requirements are unclear, please make an appropriate assumption an
 
 # Project requriement
 
+Node version >= 10.13.0
+
 # How to start
+
+go to project and run will start to answer questions:
+
+`node index.js`
+
+or
+
+`./index.js`
+
+**row and column are all starts from 0 and need to be entered as integer**
+
+# How to test
+
+go to project and run will start to answer questions:
+
+`node test/index.js`
+
+or
+
+`./test/index.js`
+
+**row and column are all starts from 0 and need to be entered as integer**
 
 # Note
